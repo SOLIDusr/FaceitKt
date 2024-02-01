@@ -6,7 +6,7 @@ Pyfaceit is a API wrapper for Faceit API written 100% in Kotlin for developers.
 
 WARNING! ACHTUNG! ВНИМАНИЕ! 危险!
 
-KotlinKt is still in development. Code will be published to maven asap, but lot's of work had to be done.
+KotlinKt is still in development. Code will be published to maven asap, but lots of work had to be done.
 
 -----
 
