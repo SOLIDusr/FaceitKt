@@ -3,16 +3,22 @@ import okhttp3.Request
 
 /**
  * FaceitKt is the first API wrapper for Faceit written entirely in Kotlin.
+ *
  * It currently supports finding player data for CS2 and will soon support additional games.
- * :copyright: (c) 2024-present.
- * * :licence: GNU GPL, see LICENSE for more details.
+ *
+ * copyright (c) 2024-present.
+ *
+ * licence GNU GPL, see LICENSE for more details.
+ *
  * @author SOLIDusr
  */
+
 class FaceitKt() {
 
     /**
      * class FaceitUser. Used for main interactions with player data.
      * @property userName Name of the user on Faceit. WARNING: Case sensitive!
+     * @property gameId class Game. What game will be requested.
      */
     class FaceitUser(private val userName: String, game: Game) {
 
@@ -21,6 +27,7 @@ class FaceitKt() {
             "Authorization" to "Bearer e7c77750-2387-44c5-9c2d-ba4f9596d083",
             "content-type" to "Application/json"
         )
+
         private val client = OkHttpClient()
 
         //  Public

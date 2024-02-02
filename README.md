@@ -2,6 +2,8 @@
 
 Pyfaceit is a API wrapper for Faceit API written 100% in Kotlin for developers.
 
+```v.0.9```
+
 -----
 
 WARNING! ACHTUNG! ВНИМАНИЕ! 危险!
