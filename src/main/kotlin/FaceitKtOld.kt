@@ -13,7 +13,7 @@ import okhttp3.Request
  * @author SOLIDusr
  */
 
-class FaceitKt() {
+class FaceitKtOld() {
 
     /**
      * class FaceitUser. Used for main interactions with player data.
