@@ -2,18 +2,12 @@
 
 Pyfaceit is a API wrapper for Faceit API written 100% in Kotlin for developers.
 
-```v.0.9```
-
------
-
-WARNING! ACHTUNG! ВНИМАНИЕ! 危险!
-
-FaceitKt is still in development. Code will be published to maven asap, but lots of work had to be done.
+```v.1.0.0```
 
 -----
 ## Docs
 
-[**Click here**](https://github.com/SOLIDusr/FaceitKt/tree/master/docs/lang.md) for detailed instructions
+Docs are in development
 
 -----
 
