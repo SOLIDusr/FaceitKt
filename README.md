@@ -16,7 +16,7 @@ git clone https://github.com/SOLIDusr/FaceitKt.git
 
 ## Docs
 
-here
+[Super cool documentation here!](https://solidusr.github.io/FaceitKt/)
 
 ## Usage
 
