@@ -390,21 +390,3 @@ class FaceitClient(apiKey: String = "e7c77750-2387-44c5-9c2d-ba4f9596d083") {
         }
     }
 }
-
-    
-    // enum class RequestTypes(path: String){
-    //     Championships("/championships"),
-    //     Games("/games"),
-    //     Hubs("/hubs"),
-    //     Leaderboards("/leaderboards"),
-    //     Leagues("/leagues"),
-    //     Matches("/matches"),
-    //     MatchMakings("/matchmakings"),
-    //     Organizers("/organizers"),
-    //     Players("/players"),
-    //     Rankings("/rankings/games"),
-    //     Search("/search"),
-    //     Teams("/teams"),
-    //     Tournaments("/tournaments"),
-    // }
-

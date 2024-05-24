@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="assets/logo.svg" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Change the description wrt project -->
+    <meta
+      name="description"
+      content="A Free and open-source documentation template built using html, tailwindcss and javascript."
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- You can add your own fonts from fonts.google.com -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Default Script tags -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./public/js/index.js"></script>
+
+    <!-- Replace the title name -->
+    <title>FaceitKt docs</title>
+  </head>
+  <body style="font-family: 'Poppins', sans-serif">
+    <!-- Header start here -->
+    <header class="w-full p-3 border flex">
+      <nav
+      class="w-full flex flex-col lg:flex-row md:flex-row sm:flex-row items-start lg:items-center md:items-center sm:items-center lg:justify-between md:justify-between sm:justify-between justify-start"
+    >
+      <ul>
+        <li class="flex items-center">
+          <a href="./index-ru.html" class="flex items-center">
+            <span class="font-mono text-2xl">FaceitKt</span>
+          </a>
+        </li>
+      </ul>
+      <ul id="header-nav" class="mr-6 sm:flex md:flex lg:flex hidden items-center">
+        <li
+          class="mr-5 mb-3 mt-5 sm:mb-0 sm:mt-0 md:mb-0 md:mt-0 lg:mb-0 lg:mt-0"
+        >
+          <a href="./index-ru.html">Главная</a>
+        </li>
+        <li
+          class="mr-5 mb-3 mt-5 sm:mb-0 sm:mt-0 md:mb-0 md:mt-0 lg:mb-0 lg:mt-0"
+        >
+          <a href="./docs-ru.html">Документация</a>
+        </li>
+        <li
+          class="mr-5 mb-3 mt-5 sm:mb-0 sm:mt-0 md:mb-0 md:mt-0 lg:mb-0 lg:mt-0"
+        >
+          <button onclick="switchToEnglishDocs()">Switch to English</button>
+        </li>
+        <div>
+          <ul class="flex">
+            <!-- Change the href link to your respective social media accounts-->
+            <li class="mr-5">
+              <a href="https://github.com/SOLIDusr/FaceitKt"><img src="./public/svgs/github.svg" alt="GitHub Link" /></a>
+            </li>
+          </ul>
+        </div>
+      </ul>
+    </nav>
+      <div class="sm:hidden flex" onclick="OnclickOpenMenu()" id="open-menu">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-6 w-6"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
+            clip-rule="evenodd"
+          />
+        </svg>
+      </div>
+      <div class="hidden" onclick="OnclickCloseMenu()" id="close-menu">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-6 w-6"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M6 18L18 6M6 6l12 12"
+          />
+        </svg>
+      </div>
+    </header>
+    <!-- Header ends here -->
+
+    <div class="flex flex-col md:flex-row lg:flex-row">
+      <!-- Side menu starts here -->
+      <nav
+        class="flex ml-10 mt-7 md:fixed lg:fixed"
+        data-spy="affix"
+        data-offset-top="300"
+        data-offset-bottom="200"
+        role="navigation"
+      >
+        <ul class="nav">
+          <li class="font-medium"><a href="#link1">Начало работы</a></li>
+          <li class="font-medium">
+            <a href="#link2">Установка</a>
+          </li>
+          <li class="font-medium"><a href="#link3">Интеграция, использование</a></li>
+          <li class="font-medium">
+            <a href="#link4">Основные компоненты</a>
+            <ul class="nav">
+              <li class="text-[#111] pl-[20px] font-[400] border-l-[2px]">
+                <a href="#link4_1">FaceitClient</a>
+              </li>
+              <li class="text-[#111] pl-[20px] font-[400] border-l-[2px]">
+                <a href="#link4_2">ApiHeader</a>
+              </li>
+              <li class="text-[#111] pl-[20px] font-[400] border-l-[2px]">
+                <a href="#link4_3">Any?.get</a>
+              </li>
+              <li class="text-[#111] pl-[20px] font-[400] border-l-[2px]">
+                <a href="#link4_4">getRequest</a>
+              </li>
+              <li class="text-[#111] pl-[20px] font-[400] border-l-[2px]">
+                <a href="#link4_5">Enums.</a>
+              </li>
+            </ul>
+          </li>
+          <li class="font-medium"><a href="#link5">Известные проблемы</a></li>
+          <li class="font-medium"><a href="#link6">Issue tracker</a></li>
+        </ul>
+      </nav>
+      <!-- Side Menu ends here -->
+
+      <div class="pl-5 md:pl-[250px] lg:pl-[250px]">
+        <!-- Link1 start -->
+        <section id="link1">
+          <div class="h-full mt-10">
+            <p class="font-normal text-2xl">Начало работы</p>
+            <p class="leading-0 w-3/4">
+              <br>
+              FaceitKt - это простой и мощный инструмент, который позволяет вам легко взаимодействовать с Faceit API. Он написан на 100% Kotlin и полностью открытый исходный код. <br>
+              <br>
+              Он использует Gson:2.10.1 и OkHttp:4.12.0 для отправки запросов на Faceit API. Текущая версия FaceitKt - 1.0.0.
+              <br>Вы всегда можете проверить последнюю версию FaceitKt на <a href="https://github.com/SOLIDusr/FaceitKt" target="_blank">GitHub(*кликабельно*)</a>.
+            </p>
+            <p class="text-sm pt-5 pb-4">Отправьте любые проблемы на наш issue tracker</p>
+          </div>
+
+        <section id="link2">
+          <div class="h-full mt-10">
+            <p class="font-normal text-2xl">Установка</p>
+            <p class="leading-0 w-3/4">
+              <br>
+              Для установки FaceitKt вы можете клонировать репозиторий с GitHub. Откройте ваш терминал и запустите следующую команду:
+              <script src="https://gist.github.com/SOLIDusr/6efab5a311acbc1e6181df94b2af7e11.js"></script>
+              Это скачивает проект на вашем локальном компьютере. Также вы можете использовать огромную зеленую кнопку <>Code для клонирования репозитория.
+            </p>
+            <p class="text-sm pt-5 pb-4">Честно говоря, вам нужен только файл FaceitClient.kt. ЗАБУДЬТЕ загрузить зависимости!</p>
+          </div>
+        </section>
+        <!-- Link2 Ends -->
+
+        <!-- Link3 start -->
+        <section id="link3">
+          <div class="h-full mt-5">
+            <p class="font-normal text-2xl">Интеграция и использование</p>
+            <p class="leading-0 w-3/4">
+              Использовать FaceitKt очень просто. Импортируйте файл FaceitClient.kt в ваш проект, создайте объект FaceitClient, а затем определите класс с именем группы конечных точек, которые вы хотите использовать. Смотрите пример:
+              <br><br>
+              <script src="https://gist.github.com/SOLIDusr/8bb7b36249ce6e4ead7bc81ee2418130.js"></script>
+            </p>
+            <p class="text-sm pt-5 pb-4">Это простой пример того, что вы можете сделать с FaceitKt.</p>
+          </div>
+        </section>
+        <!-- Link3 end -->
+
+        <!-- Link4 start -->
+        <section id="link4">
+          <div class="h-full mt-5">
+            <p class="font-normal text-2xl">Основные компоненты</p>
+            <p class="text-sm pt-2 pb-4">Важные части кода, которые нужно знать:</p>
+          </div>
+
+          <!-- Font Family start -->
+          <section id="link4_1" class="border-l-[2px]">
+            <div class="h-full mt-3 ml-5">
+              <p class="font-normal text-xl">FaceitClient</p>
+              <p class="text-sm pt-2 pb-4">
+                FaceitClient — это основной класс, который вы будете использовать для взаимодействия с Faceit API. Он содержит все конечные точки и методы для работы с Faceit API.
+              </p>
+            </div>
+          </section>
+          <section id="link4_2" class="border-l-[2px]">
+            <div class="h-full mt-3 ml-5">
+              <p class="font-normal text-xl">Приватное значение "apiHeader"</p>
+              <p class="text-sm pt-2 pb-4">
+                Приватное значение "apiHeader" — это карта заголовков, которые будут использоваться для отправки запросов к Faceit API. <br>
+                Вы можете добавить свой собственный ключ FaceitAPI при инициализации объекта FaceitClient, но мой ключ уже здесь, если у вас его нет.
+              </p>
+            </div>
+          </section>
+
+          <section id="link4_3" class="border-l-[2px]">
+            <div class="h-full mt-3 ml-5">
+              <p class="text-sm pt-2 pb-4">
+                <p class="font-normal text-xl">Оператор fun Any?.get</p>
+                Оператор fun Any?.get — это забавная функция, которая позволяет получить значение объекта, если код не уверен, является ли он map, списком или чем-то еще. <br>
+                Не рекомендуется использовать его, но это забавная вещь, о которой стоит знать.
+              </p>
+            </div>
+          </section>
+
+          <section id="link4_4" class="border-l-[2px]">
+            <div class="h-full mt-3 ml-5">
+              <p class="font-normal text-xl">fun getRequest(url: String)</p>
+              <p class="text-sm pt-2 pb-4">
+                fun getRequest(url: String) — это функция, которая отправляет GET-запрос к Faceit API. <br>
+                Она принимает строку с URL для запроса и возвращает объект Response.
+              </p>
+            </div>
+          </section>
+
+          <section id="link4_5" class="border-l-[2px]">
+            <div class="h-full mt-3 ml-5">
+              <p class="font-normal text-xl">Перечисления (Enums)</p>
+              <p class="text-sm pt-2 pb-4">
+                ChampionshipType | GamesRegion | MatchesType | TournamentTypes | RankingsRegions <br>
+                Перечисления регионов устарели, так как поддержка Faceit не предоставила их мне. Используйте на свой страх и риск.
+              </p>
+            </div>
+          </section>
+          <!-- Font Family ends -->
+        </section>
+        <!-- Link4 end -->
+
+        <!-- Link5 starts -->
+        <section id="link5">
+          <div class="h-full mt-10">
+            <p class="font-normal text-2xl">Известные проблемы</p>
+          </div>
+
+          <!-- Reference Start -->
+          <section id="link5_1" class="border-l-[2px]">
+            <div class="h-full mt-3 ml-5">
+              <p class="font-normal text-xl">Устаревшие регионы</p>
+              <p class="text-sm pt-2 pb-4">
+                Некоторые перечисления и функции не полностью реализованы или устарели.
+              </p>
+            </div>
+          </section>
+          <!-- Reference ends -->
+        </section>
+        <!-- Link5 ends -->
+
+        <!-- Link6 starts -->
+        <section id="link6">
+          <div class="h-full mt-5">
+            <p class="font-normal text-2xl">Проблемы</p>
+            <p class="text-sm pt-5 pb-4">
+              Если у вас есть какие-либо проблемы или запросы, пожалуйста, сообщите о них на нашем GitHub
+              <a
+                href="https://github.com/SOLIDusr/FaceitKt/issues"
+                target="_blank"
+                class="bg-gray-300 rounded p-1 hover:text-pink-400"
+                >issue tracker</a
+              >.
+            </p>
+          </div>
+        </section>
+        <!-- Link6 ends -->
+      </div>
+    </div>
+    <!-- Footer starts here -->
+    <footer>
+      <div class="bg-black h-38 py-1 px-1 mt-5">
+        <div
+          tabindex="0"
+          aria-label="footer"
+          class="focus:outline-none mx-auto container flex flex-col items-center justify-center"
+        >
+          <div class="text-black flex flex-col md:items-center f-f-l pt-0">
+            <div class="my-6 text-base text-color f-f-l">
+              <ul class="md:flex items-center">
+                <li class="md:mr-6 cursor-pointer pt-4 lg:py-0">
+                  <a
+                    href="./index-ru.html"
+                    class="text-white focus:outline-none focus:underline hover:text-gray-200"
+                    >Главная
+                  </a>
+                </li>
+                <li class="md:mr-6 cursor-pointer pt-4 lg:py-0">
+                  <a
+                    href="./docs-ru.html"
+                    class="text-white focus:outline-none focus:underline hover:text-gray-200"
+                    >Документация
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="text-sm text-color mb-10 f-f-l">
+              <!-- Rename cleandocs with your respective name -->
+              <p tabindex="0" class="text-white focus:outline-none">
+                &copy; 2022 Cleandocs. Все права защищены <br>
+                &copy; 2024 FaceitKt. Все права защищены
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer ends here -->
+  </body>
+</html>

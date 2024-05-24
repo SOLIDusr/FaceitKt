@@ -1,21 +1,42 @@
-# FaceitKt
+# FaceitKt is out
 
-Pyfaceit is a API wrapper for Faceit API written 100% in Kotlin for developers.
+![FaceitKt Preview](https://github.com/SOLIDusr/FaceitKt/raw/master/assets/FaceitKt_preview.png)
 
-```v.1.0.0```
+FaceitKt is a powerful API wrapper for Faceit.
 
------
+Developed from python scratch based on milahnmartin's pyfaceit to a nice kotlin library.
+
+## Installation
+
+Just download it from github. You basically need just FaceitClient.kt file.
+
+```bash
+git clone https://github.com/SOLIDusr/FaceitKt.git
+```
+
 ## Docs
 
-Docs are in development
+here
 
------
+## Usage
+
+```kotlin
+fun main(){
+    val faceitClient = FaceitClient()
+    val player = faceitClient.Players()
+    val info = player.getPlayers("s1mple")
+    println(info["country"])
+    >> output - ua
+}
+```
+
+and something like that...
 
 ## Contributing
 
-Pull requests are welcomed. For major changes, please open an issue first
-to discuss what you would like to change. Feel free to use FaceitKt in your projects and ideas. 
+Pull requests are welcome. For major changes, please open an issue first
+to discuss what you would like to change.
 
 ## License
 
-[GPLv3](https://www.gnu.org/licenses/gpl-3.0-standalone.html)
+[GPL-3.0 license](https://www.gnu.org/licenses/gpl-3.0.html)
